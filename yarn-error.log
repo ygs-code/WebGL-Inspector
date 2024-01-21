@@ -1,0 +1,71 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/mysql/bin;./usr/local/bin:/Applications/Docker.app/Contents/Resources/bin:/usr/local/mongodb-4-5.0.6/bin:/usr/local/mysql/bin;./usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/mysql/bin;./usr/local/bin:/Applications/Docker.app/Contents/Resources/bin:/usr/local/mongodb-4-5.0.6/bin:/Applications/Docker.app/Contents/Resources/bin:/usr/local/mongodb-4-5.0.6/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.14.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://npm.lingzhi.com/babel-cli: socket hang up
+      at connResetException (node:internal/errors:691:14)
+      at Socket.socketOnEnd (node:_http_client:466:23)
+      at Socket.emit (node:events:538:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "webgl-inspector",
+    "version": "1.0.0",
+    "description": "An inspector for WebGL",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack --config core/webpack.config.js  --display-modules"
+    },
+    "babel": {
+      "presets": [
+        "env"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/benvanik/WebGL-Inspector.git"
+    },
+    "keywords": [
+      "webgl",
+      "webgl2"
+    ],
+    "author": "Ben Vanik",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/benvanik/WebGL-Inspector/issues"
+    },
+    "homepage": "https://github.com/benvanik/WebGL-Inspector#readme",
+    "devDependencies": {
+      "babel-cli": "^6.18.0",
+      "babel-loader": "^6.2.7",
+      "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+      "babel-polyfill": "^6.16.0",
+      "babel-preset-env": "^1.1.4",
+      "babel-preset-es2015": "^6.18.0",
+      "babel-preset-stage-0": "^6.16.0",
+      "exports-loader": "^0.6.3",
+      "imports-loader": "^0.7.0",
+      "webpack": "^1.14.0",
+      "webpack-load-plugins": "^0.1.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
